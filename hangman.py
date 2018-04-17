@@ -3,24 +3,26 @@
 import random
 import time
 import math
+
 ok = []
 def printTussenstand():
     pass
 
-fout = 0
-
-#fouten =  
-#variabele maken waarin staat hoevaak je het fout geraden hebt
+fout = 0 
+#variabele waarin staat hoevaak je het fout geraden hebt
 #5 ifs voor de galg
 
 def printGalgje():
     pass
 
 ggl = ""
+#"goed geraden lijst" voor alle letters goed geraden door de speler
 
 lijst = ["strijder", "humanisme", "communisme", "zimbabwe", "sinaasappel", "ananas", "dimensie", "nebula", "beeldscherm", "bilderdijkstraat", "luidspreker", "andromeda"]
+#de lijst met woorden waaruit gekozen kan worden
 
 geheimwoord = random.choice(lijst)
+#het geheime woord dat uit de lijst gekozen wordt
 
 #Als geheimwoord zelf bepaald mag worden :
 #geheimwoord = input("Typ hier het geheime woord in: ")
@@ -114,15 +116,11 @@ while True:
         print("Ok.")
         time.sleep(1)
         print("Vaarwel. :(")
-        time.sleep(1)
-        print(ok)
-        print(jorg)
-        time.sleep(16)
+        time.sleep(1.5)
         break
     lettergoed = False
     for i in range(jorg):
         if kies == geheimwoord[i]:
-            #ok = ok[0:i] + kies + ok[i:-1]
             lettergoed = True
             ok[i] = kies
             print("")
